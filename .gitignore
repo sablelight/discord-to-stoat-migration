@@ -1,62 +1,66 @@
-# Secrets and local state — never commit these
-.env
-.env.*
-*.env
-!.env.example
-*.pem
-*.key
-id_rsa*
-*.p12
-*.pfx
-*.kdbx
-*credentials*.json
-secrets.json
-*.local.json
-
-# Bot token files
-.bot_token
-*.token
-
-# Local databases (can contain ticket transcripts, user messages, guild data)
-*.db
-*.db-shm
-*.db-wal
-*.sqlite
-*.sqlite3
-
-# Downloaded archives — these are third-party source, not mine
-*.zip
-*.tar.gz
-*.7z
+# Node.js
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
 
 # Build output
-build/
 dist/
-release/
-obj/
-bin/
-node_modules/
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.dart_tool/
-.gradle/
+build/
+out/
+.next/
+.nuxt/
+.esbuild/
+*.tsbuildinfo
 
-# Binaries
-*.exe
-*.apk
-*.so
-*.dylib
-*.dll
-*.jar
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
 
 # Logs
+logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Editors / OS
+# IDE
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Test / Coverage
+coverage/
+.nyc_output/
+.vitest/
+.playwright/
+
+# TypeScript
+*.tsbuildinfo
+
+# Package manager
+.yarn/
+.pnpm-store/
+
+# Turbo
+.turbo/
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# Generated
+generated/
+*.generated.ts
