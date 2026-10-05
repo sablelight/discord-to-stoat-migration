@@ -43,7 +43,7 @@ jobs:
           npx mocha --require @babel/register 'test/**/*.test.js' 2>/dev/null || true
 
       - name: Upload coverage
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v7
         with:
           files: ./coverage/lcov.info
           fail_ci_if_error: false
