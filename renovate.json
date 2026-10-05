@@ -25,7 +25,7 @@
       "groupName": "Go dependencies (minor/patch)",
       "groupSlug": "go-minor-patch",
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true,
+      "automerge": false,
       "automergeType": "pr",
       "platformAutomerge": true
     },
@@ -34,21 +34,21 @@
       "groupName": "Python dependencies (minor/patch)",
       "groupSlug": "pip-minor-patch",
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": false
     },
     {
       "matchManagers": ["npm"],
       "groupName": "Node dependencies (minor/patch)",
       "groupSlug": "npm-minor-patch",
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": false
     },
     {
       "matchManagers": ["nuget"],
       "groupName": "NuGet dependencies (minor/patch)",
       "groupSlug": "nuget-minor-patch",
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": false
     },
     {
       "matchManagers": ["dockerfile", "docker-compose"],
@@ -62,7 +62,7 @@
       "groupName": "GitHub Actions",
       "groupSlug": "github-actions",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "automerge": false
     },
     {
       "matchDatasources": ["github-releases"],
@@ -75,13 +75,13 @@
       "matchPackageNames": ["golang.org/x/*"],
       "groupName": "Go extended stdlib",
       "groupSlug": "go-extended-stdlib",
-      "automerge": true
+      "automerge": false
     },
     {
       "matchPackageNames": ["github.com/stretchr/testify", "github.com/golang/mock"],
       "groupName": "Go testing libs",
       "groupSlug": "go-testing",
-      "automerge": true
+      "automerge": false
     },
     {
       "matchPackageNames": ["github.com/redis/go-redis", "github.com/go-redis/redis"],
@@ -93,7 +93,7 @@
       "matchPackageNames": ["prometheus/client_golang"],
       "groupName": "Prometheus client",
       "groupSlug": "prom-client",
-      "automerge": true
+      "automerge": false
     }
   ],
   "ignoreDeps": [
