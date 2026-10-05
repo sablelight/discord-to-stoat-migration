@@ -1,0 +1,62 @@
+# Secrets and local state — never commit these
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+id_rsa*
+*.p12
+*.pfx
+*.kdbx
+*credentials*.json
+secrets.json
+*.local.json
+
+# Bot token files
+.bot_token
+*.token
+
+# Local databases (can contain ticket transcripts, user messages, guild data)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Downloaded archives — these are third-party source, not mine
+*.zip
+*.tar.gz
+*.7z
+
+# Build output
+build/
+dist/
+release/
+obj/
+bin/
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.dart_tool/
+.gradle/
+
+# Binaries
+*.exe
+*.apk
+*.so
+*.dylib
+*.dll
+*.jar
+
+# Logs
+*.log
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
