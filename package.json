@@ -6,7 +6,7 @@
   "description": "Migrate a Discord server to Stoat",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^14.18.0",
+    "discord.js": "^14.27.0",
     "stoat.js": "^7.3.6"
   }
 }
